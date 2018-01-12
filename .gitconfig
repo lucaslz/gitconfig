@@ -1,0 +1,30 @@
+[user]
+	name = 
+	email = 
+[alias]
+	co = checkout
+  	lg = log --all --graph --decorate --oneline --abbrev-commit
+  	cm = commit -m
+  	ac = !git add -A && git commit
+  	st = status -sb
+	s = status
+	ck = checkout
+	ckm = ck master
+	ckd = ck dev
+	rm = rebase master
+	rd = rebase dev
+	md = merge dev
+	lon = log --name-only
+	lons = log --name-status
+	plom = pull origin master
+	psom = push origin master
+  	tags = tag -l
+  	branches = branch -a
+  	remotes = remote -v
+        stl = stash list
+        stp = stash pop
+        std = stash drop
+	adev = !git checkout master && git pull origin master && git checkout dev && git rebase master
+	pdev = !git checkout master && git pull origin master && git checkout dev && git rebase master && git checkout master && git merge dev && git push origin master && git checkout dev
+	atm = !git checkout master && git pull origin master
+	pm = !git checkout master && git pull origin master && git push origin master
